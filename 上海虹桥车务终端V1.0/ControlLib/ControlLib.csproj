@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{755B5F47-5F49-4344-8F7F-728E829F253C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ControlLib</RootNamespace>
+    <AssemblyName>ControlLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChuzhanXHJ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChuzhanXHJ.Designer.cs">
+      <DependentUpon>ChuzhanXHJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Daocha1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Daocha1.Designer.cs">
+      <DependentUpon>Daocha1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Daocha_1_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Daocha_1_1.Designer.cs">
+      <DependentUpon>Daocha_1_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Daocha_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Daocha_2.Designer.cs">
+      <DependentUpon>Daocha_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Daocha_2_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Daocha_2_2.Designer.cs">
+      <DependentUpon>Daocha_2_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diaoxin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Diaoxin.Designer.cs">
+      <DependentUpon>Diaoxin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guidao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Guidao.Designer.cs">
+      <DependentUpon>Guidao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="huoche.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="huoche.Designer.cs">
+      <DependentUpon>huoche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JinzhanXHJ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JinzhanXHJ.Designer.cs">
+      <DependentUpon>JinzhanXHJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Danniu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Danniu.Designer.cs">
+      <DependentUpon>Danniu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dangui.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dangui.Designer.cs">
+      <DependentUpon>Dangui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Daocha_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Daocha_1.Designer.cs">
+      <DependentUpon>Daocha_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Xinhaoji.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Xinhaoji.Designer.cs">
+      <DependentUpon>Xinhaoji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xinhaoji2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Xinhaoji2.Designer.cs">
+      <DependentUpon>Xinhaoji2.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ChuzhanXHJ.resx">
+      <DependentUpon>ChuzhanXHJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dangui.resx">
+      <DependentUpon>Dangui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Danniu.resx">
+      <DependentUpon>Danniu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Daocha1.resx">
+      <DependentUpon>Daocha1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Daocha_1_1.resx">
+      <DependentUpon>Daocha_1_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Daocha_2.resx">
+      <DependentUpon>Daocha_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Daocha_2_2.resx">
+      <DependentUpon>Daocha_2_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diaoxin.resx">
+      <DependentUpon>Diaoxin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Daocha_1.resx">
+      <DependentUpon>Daocha_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guidao.resx">
+      <DependentUpon>Guidao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="huoche.resx">
+      <DependentUpon>huoche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JinzhanXHJ.resx">
+      <DependentUpon>JinzhanXHJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xinhaoji.resx">
+      <DependentUpon>Xinhaoji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xinhaoji2.resx">
+      <DependentUpon>Xinhaoji2.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ChuzhanXHJ.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Content Include="Dangui.bmp" />
+    <Content Include="Daocha1.bmp" />
+    <Content Include="Guidao.bmp" />
+    <Content Include="Xinhaoji.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

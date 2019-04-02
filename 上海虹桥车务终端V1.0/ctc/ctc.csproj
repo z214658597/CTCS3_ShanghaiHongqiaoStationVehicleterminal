@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A15B638-2C41-4A5F-B45B-B66B91C81DCF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ctc</RootNamespace>
+    <AssemblyName>ctc</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\上海虹桥车务终端\ctc\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="chaoshiyuanyin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chaoshiyuanyin.Designer.cs">
+      <DependentUpon>chaoshiyuanyin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chazhaocheci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chazhaocheci.Designer.cs">
+      <DependentUpon>chazhaocheci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chewu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chewu.designer.cs">
+      <DependentUpon>chewu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chewunanjing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chewunanjing.Designer.cs">
+      <DependentUpon>chewunanjing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chewushanghai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chewushanghai.Designer.cs">
+      <DependentUpon>chewushanghai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="connection.cs" />
+    <Compile Include="moshizhuanhuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="moshizhuanhuan.Designer.cs">
+      <DependentUpon>moshizhuanhuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qianshoumingling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qianshoumingling.Designer.cs">
+      <DependentUpon>qianshoumingling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="duozhanxianshi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="duozhanxianshi.Designer.cs">
+      <DependentUpon>duozhanxianshi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jihuatu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jihuatu.Designer.cs">
+      <DependentUpon>Jihuatu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="qianshoujihua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qianshoujihua.Designer.cs">
+      <DependentUpon>qianshoujihua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="qingqiumingling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qingqiumingling.Designer.cs">
+      <DependentUpon>qingqiumingling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xingcherizhi1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xingcherizhi1.Designer.cs">
+      <DependentUpon>xingcherizhi1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="denglu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="denglu.Designer.cs">
+      <DependentUpon>denglu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xingcherizhi2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xingcherizhi2.Designer.cs">
+      <DependentUpon>xingcherizhi2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xingcherizhi3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xingcherizhi3.Designer.cs">
+      <DependentUpon>xingcherizhi3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zhuxiao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zhuxiao.Designer.cs">
+      <DependentUpon>zhuxiao.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="chaoshiyuanyin.resx">
+      <DependentUpon>chaoshiyuanyin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chazhaocheci.resx">
+      <DependentUpon>chazhaocheci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chewu.resx">
+      <DependentUpon>chewu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chewunanjing.resx">
+      <DependentUpon>chewunanjing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chewushanghai.resx">
+      <DependentUpon>chewushanghai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="moshizhuanhuan.resx">
+      <DependentUpon>moshizhuanhuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qianshoumingling.resx">
+      <DependentUpon>qianshoumingling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="duozhanxianshi.resx">
+      <DependentUpon>duozhanxianshi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jihuatu.resx">
+      <DependentUpon>Jihuatu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="qianshoujihua.resx">
+      <DependentUpon>qianshoujihua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="qingqiumingling.resx">
+      <DependentUpon>qingqiumingling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xingcherizhi1.resx">
+      <DependentUpon>xingcherizhi1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="denglu.resx">
+      <DependentUpon>denglu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xingcherizhi2.resx">
+      <DependentUpon>xingcherizhi2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xingcherizhi3.resx">
+      <DependentUpon>xingcherizhi3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zhuxiao.resx">
+      <DependentUpon>zhuxiao.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControlLib\ControlLib.csproj">
+      <Project>{755B5F47-5F49-4344-8F7F-728E829F253C}</Project>
+      <Name>ControlLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
